@@ -55,88 +55,11 @@
           everyone else who believes in the power of drawing.
         </p>
         <p>
-          If you wish to participate, please sign up below.
+          The time to register is over, we hope to see you soon!
         </p>
       </div>
     </div>
-    <form method="post">
-    <div class="row">
-      <div class="one-half column">
-          {% csrf_token %}
-          <div class="row">
-            <div class="six columns">
-              <label for="nameInput">Name*</label>
-              {{form.name}}
-            </div>
-            <div class="six columns">
-              <label for="RecipientInput">Who are you*</label>
-              {{form.role}}
-            </div>
-          </div>
-          <div class="row">
-            <div class="six columns">
-              <label for="EmailInput">Email address*</label>
-              {{form.email}}
-            </div>
-            <div class="six columns">
-              <label for="websiteAddressInput">Website address</label>
-              {{form.websiteAddress}}
-            </div>
-          </div>
-          <div class="row">
-          <div class="twelve columns">
-            <label for="takePartInput">Do you want to take part in the Drawing Estafette on the day of the opening?*</label>
-            <div align="left">
-              {{form.takePart}}
-            </div>
-          </div>
-          <div class="row">
-          <div class="twelve columns">
-            <label for="exampleMessage">Additional message</label>
-            {{form.additionalMessage}}
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-      <h5>Artwork</h5>
-      <div class="row">
-        <div class="four columns">
-          <label for="artwork1Title">Title</label>
-          {{form.artwork1Title}}
-          <label for="artwork1Size">Size (Height x Width)</label>
-          <div class="row">
-            {{form.artwork1SizeH}}
-            {{form.artwork1SizeW}}
-          </div>
-          <label for="artwork1Price">Price in €</label>
-          {{form.artwork1Price}}
-        </div>
-        <div class="four columns">
-          <label for="artwork2Title">Title</label>
-          {{form.artwork2Title}}
-          <label for="artwork2Size">Size (Height x Width)</label>
-          <div class="row">
-            {{form.artwork2SizeH}}
-            {{form.artwork2SizeW}}
-          </div>
-          <label for="artwork2Price">Price in €</label>
-          {{form.artwork2Price}}
-        </div>
-        <div class="four columns">
-          <label for="artwork3Title">Title</label>
-          {{form.artwork3Title}}
-          <label for="artwork3Size">Size (Height x Width)</label>
-          <div class="row">
-            {{form.artwork3SizeH}}
-            {{form.artwork3SizeW}}
-          </div>
-          <label for="artwork3Price">Price in €</label>
-          {{form.artwork3Price}}
-        </div>
-      </div>
-      <input class="button" type="submit" value="Submit">
-    </form>
   </div>
+
 </body>
 </html>
